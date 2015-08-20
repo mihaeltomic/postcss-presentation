@@ -2,7 +2,7 @@ node_modules/
 bower_components/
 .tmp/
 !/dist/style.css
-/dist
+/dist*
 *.sln
 *.suo
 *.backup
