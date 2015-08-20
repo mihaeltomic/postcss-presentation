@@ -3,7 +3,7 @@
 
 /*Vars*/
 $success: green;
-$default: #ccc;
+$default: #fdfd;
 
 /*Mixins*/
 @define-mixin large-title {
