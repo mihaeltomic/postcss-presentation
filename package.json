@@ -1,0 +1,23 @@
+{
+  "name": "postcss-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "cssnano": "^2.6.0",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^5.1.10",
+    "postcss-custom-media": "^4.1.0",
+    "postcss-mixins": "^0.4.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-pxtorem": "^2.3.2",
+    "postcss-simple-extend": "^0.3.2",
+    "postcss-simple-vars": "^0.3.0"
+  }
+}

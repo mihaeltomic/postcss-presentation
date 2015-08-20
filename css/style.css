@@ -1,0 +1,58 @@
+/*Custom queries*/
+@custom-media --small-viewport (min-width: 50em);
+
+/*Vars*/
+$success: green;
+$default: #ccc;
+
+/*Mixins*/
+@define-mixin large-title {
+    font-family: Georgia, Times New Roman, sans-serif;
+    font-style: italic;
+    font-size: calc(16px * 2);
+    line-height: calc(24px * 1.5);
+}
+
+body {
+    padding-top: 24px; 
+    background-color: #fff;
+    margin: 0 auto;
+    @media (--small-viewport) {
+        width: 1280px;
+    }
+}
+
+.darth {
+    &__vader {
+        padding: 16px;
+        margin-bottom: 16px;
+        background: linear-gradient(black, darkred);
+        
+        &--lightsaber {
+            font-family: Georgia, Times New Roman, sans-serif;
+            font-style: italic;
+            font-size: calc(16px * 2);
+            line-height: calc(24px * 1.5);
+            color: red;
+            @media (--small-viewport) {
+                width: 50%;
+            }
+        }
+    }
+    &__maul {
+        padding: 16px;
+        background: linear-gradient(red, darkred);
+        
+        &--dual-lightsaber {
+            @mixin large-title;
+            color: #333;
+            @media (--small-viewport) {
+                width: 50%;
+            }
+        }
+    }
+    &__name {
+        color: $default;
+        font-family: Helvetica, Arial, sans;
+    }
+}
