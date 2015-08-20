@@ -1,8 +1,6 @@
 node_modules/
 bower_components/
 .tmp/
-!/dist/style.css
-/dist*
 *.sln
 *.suo
 *.backup
