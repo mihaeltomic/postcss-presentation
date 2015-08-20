@@ -18,7 +18,7 @@ gulp.task('css', function (){
     simplevars,
     nested,
     customMedia,
-    // cssnano,
+    cssnano,
     autoprefixer ({ 
       browsers: ['last 4 version', 'IE 8'] 
     })
