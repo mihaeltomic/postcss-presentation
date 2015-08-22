@@ -1,7 +1,7 @@
 {
   "name": "postcss-practice",
   "version": "1.0.0",
-  "description": "",
+  "description": "PostCSS presentation practice files",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,25 @@
     "postcss-pxtorem": "^2.3.2",
     "postcss-simple-extend": "^0.3.2",
     "postcss-simple-vars": "^0.3.0"
-  }
+  },
+  "dependencies": {
+    "gulp-postcss": "^5.1.10",
+    "autoprefixer-core": "^5.2.1",
+    "cssnano": "^2.6.1",
+    "postcss-custom-media": "^4.1.0",
+    "postcss-nested": "^0.3.2",
+    "postcss-mixins": "^0.4.0",
+    "postcss-simple-vars": "^0.3.0",
+    "gulp": "^3.9.0",
+    "postcss-pxtorem": "^2.3.2",
+    "postcss-simple-extend": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihaeltomic/postcss-presentation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mihaeltomic/postcss-presentation/issues"
+  },
+  "homepage": "https://github.com/mihaeltomic/postcss-presentation#readme"
 }
