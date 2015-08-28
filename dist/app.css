@@ -1,0 +1,73 @@
+/*@import "../bower_components/normalize.css/normalize.css";*/
+/*Vars*/
+/*Mixins*/
+@define-mixin large-title {
+    font-family: Georgia, Times New Roman, sans-serif;
+    font-style: italic;
+    font-size: -webkit-calc(16px * 2);
+    font-size: calc(16px * 2);
+    line-height: -webkit-calc(24px * 1.5);
+    line-height: calc(24px * 1.5);
+}
+/*Custom queries*/
+body {
+    padding-top: 24px; 
+    background-color: #fff;
+    margin: 0 auto;
+}
+@media (min-width: 50em) {
+    body {
+        width: 1280px;
+    }
+}
+
+.darth__vader {
+    padding: 16px;
+    margin-bottom: 16px;
+    background: -webkit-linear-gradient(black, darkred);
+    background: linear-gradient(black, darkred);
+}
+
+.darth__vader--lightsaber {
+    font-family: Georgia, Times New Roman, sans-serif;
+    font-style: italic;
+    font-size: -webkit-calc(16px * 2);
+    font-size: calc(16px * 2);
+    line-height: -webkit-calc(24px * 2);
+    line-height: calc(24px * 2);
+    color: red;
+}
+
+@media (min-width: 50em) {
+    .darth__vader--lightsaber {
+        width: 50%;
+    }
+}
+
+.darth__maul {
+    padding: 16px;
+    background: -webkit-linear-gradient(red, darkred);
+    background: linear-gradient(red, darkred);
+}
+
+.darth__maul--dual-lightsaber {
+    @mixin large-title;
+    color: #333;
+}
+
+@media (min-width: 50em) {
+    .darth__maul--dual-lightsaber {
+        width: 50%;
+    }
+}
+
+.darth__name {
+    color: #fdfd;
+    font-family: Helvetica, Arial, sans;
+}
+
+a {
+    color: red;
+    font-size: 12px;
+}
+
