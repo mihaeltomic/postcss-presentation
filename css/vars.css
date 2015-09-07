@@ -1,3 +1,4 @@
 /*Vars*/
-$success: green;
-$default: #fdfd;
+$primary-color: #fdfd;
+$primary-gradient: linear-gradient(black, darkred);
+$secondary-gradient: linear-gradient(red, darkred);

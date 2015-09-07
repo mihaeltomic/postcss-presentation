@@ -1,7 +1,11 @@
 /*Mixins*/
-@define-mixin large-title {
-    font-family: Georgia, Times New Roman, sans-serif;
+@define-mixin icon $default {
+	background-url: url(/img/$(default).svg);
+}
+
+@define-mixin title {
+	font-family: Georgia, Times New Roman, sans-serif;
     font-style: italic;
     font-size: calc(16px * 2);
-    line-height: calc(24px * 1.5);
+    line-height: calc(24px * 2);
 }

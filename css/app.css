@@ -1,6 +1,5 @@
-/*@import "../bower_components/normalize.css/normalize.css";*/
 @import "vars.css";
 @import "mixins.css";
-@import "custom-q.css";
+@import "custom-queries.css";
 @import "style.css";
 

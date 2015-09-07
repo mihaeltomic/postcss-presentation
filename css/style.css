@@ -11,14 +11,13 @@ body {
     &__vader {
         padding: 16px;
         margin-bottom: 16px;
-        background: linear-gradient(black, darkred);
+        background: $primary-gradient;
         
         &--lightsaber {
-            font-family: Georgia, Times New Roman, sans-serif;
-            font-style: italic;
-            font-size: calc(16px * 2);
-            line-height: calc(24px * 2);
+            @mixin icon crystal;
+            @mixin title;
             color: red;
+            border-radius: 5px;
             @media (--small-viewport) {
                 width: 50%;
             }
@@ -26,23 +25,20 @@ body {
     }
     &__maul {
         padding: 16px;
-        background: linear-gradient(red, darkred);
+        background: $secondary-gradient;
         
         &--dual-lightsaber {
-            @mixin large-title;
+            @mixin icon crystal;
+            @mixin title;
             color: #333;
+            border-radius: 10px;
             @media (--small-viewport) {
                 width: 50%;
             }
         }
     }
     &__name {
-        color: $default;
+        color: $primary-color;
         font-family: Helvetica, Arial, sans;
     }
-}
-
-a {
-    color: red;
-    font-size: 12px;
 }

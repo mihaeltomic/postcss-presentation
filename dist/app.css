@@ -1,14 +1,5 @@
-/*@import "../bower_components/normalize.css/normalize.css";*/
 /*Vars*/
 /*Mixins*/
-@define-mixin large-title {
-    font-family: Georgia, Times New Roman, sans-serif;
-    font-style: italic;
-    font-size: -webkit-calc(16px * 2);
-    font-size: calc(16px * 2);
-    line-height: -webkit-calc(24px * 1.5);
-    line-height: calc(24px * 1.5);
-}
 /*Custom queries*/
 body {
     padding-top: 24px; 
@@ -24,11 +15,13 @@ body {
 .darth__vader {
     padding: 16px;
     margin-bottom: 16px;
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(darkred));
     background: -webkit-linear-gradient(black, darkred);
     background: linear-gradient(black, darkred);
 }
 
 .darth__vader--lightsaber {
+    background-url: url(/img/crystal.svg);
     font-family: Georgia, Times New Roman, sans-serif;
     font-style: italic;
     font-size: -webkit-calc(16px * 2);
@@ -36,6 +29,7 @@ body {
     line-height: -webkit-calc(24px * 2);
     line-height: calc(24px * 2);
     color: red;
+    border-radius: 5px;
 }
 
 @media (min-width: 50em) {
@@ -46,13 +40,21 @@ body {
 
 .darth__maul {
     padding: 16px;
+    background: -webkit-gradient(linear, left top, left bottom, from(red), to(darkred));
     background: -webkit-linear-gradient(red, darkred);
     background: linear-gradient(red, darkred);
 }
 
 .darth__maul--dual-lightsaber {
-    @mixin large-title;
+    background-url: url(/img/crystal.svg);
+    font-family: Georgia, Times New Roman, sans-serif;
+    font-style: italic;
+    font-size: -webkit-calc(16px * 2);
+    font-size: calc(16px * 2);
+    line-height: -webkit-calc(24px * 2);
+    line-height: calc(24px * 2);
     color: #333;
+    border-radius: 10px;
 }
 
 @media (min-width: 50em) {
@@ -64,10 +66,5 @@ body {
 .darth__name {
     color: #fdfd;
     font-family: Helvetica, Arial, sans;
-}
-
-a {
-    color: red;
-    font-size: 12px;
 }
 
